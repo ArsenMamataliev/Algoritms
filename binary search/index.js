@@ -21,7 +21,7 @@ const binarySearch = () => {
                 logN++;
                 let middleIndex = Math.floor((startIndex + endIndex) / 2);
                 if(target === array[middleIndex]) {
-                    return alert(`Woow i find your target value ${array[middleIndex]}, log(${logN}) `);
+                    return alert(`Woow, I find your target value ${array[middleIndex]}, log(${logN}) `);
                 }
                 if(target > array[middleIndex]) {
                     console.log("Searching the right side of Array")
