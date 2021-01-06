@@ -1,6 +1,11 @@
 const inputNum = ()=> {
-    let arr = prompt(`Please enter numbers as 1, 2, 3. I'll sort them`);
-    return arr.split(',');
+    let inputStr = prompt(`Please enter numbers as 1, 2, 3. I'll sort them`, '-1, 10, 5, 4, 0, 8');
+    let arr = inputStr.split(',');
+    //str to number
+    for(let i = 0; i < arr.length; i++){
+        arr[i] = + arr[i];
+    }
+    return arr;
 };
 
 
@@ -16,4 +21,4 @@ const quickSort = (arr) => {
     
 }
 
-console.log(quickSort(inputNum()));
+document.write(quickSort(inputNum()));
